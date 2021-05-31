@@ -1,0 +1,101 @@
+html {
+  font-size: 1rem;
+}
+/*Media Queries*/
+/*Responsive Typography*/
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 1.6rem;;
+  }
+}
+@media only screen and (min-width: 1001px) {
+  html {
+    font-size: 1.6rem;
+  }
+}
+/* Responsive divs */
+@media only screen and (max-width: 400px) {
+  .div-align {
+    flex-flow: column nowrap;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .div-align {
+    flex-flow: column nowrap;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .div-align {
+    flex-flow: column nowrap;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .div-align {
+    flex-flow: column nowrap;
+  }
+}
+@media only screen and (min-width: 1401px) {
+  .div-align {
+    flex-flow: row nowrap;
+  }
+}
+/* Padding */
+@media only screen and (min-width: 1401px) {
+  .pad-3 {
+    padding-top: 1.5rem;
+  }
+}
+/* Divs */
+iframe {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 4px 4px 14px #000;
+  -webkit-box-shadow: 4px 4px 14px #000;
+  box-shadow: 4px 4px 14px #000;
+}
+.col-75 {
+  flex: 0 0 auto;
+  width: 75%;
+}
+/* For some reason putting border-radius in
+a separate class causes it to only round the corners
+not make it a circle */
+.profile-icon {
+  border-radius: 50%;
+  border: 3px #000 solid;
+  margin: 1rem;
+}
+.circle {
+  border-radius: 50%;
+  padding: .4rem;
+  font-size: 0.7rem;
+}
+.col-4b {
+  flex: 0 0 auto;
+
+}
+.pad-left-07 {
+  padding-left: 0.7rem;
+}
+p {
+  margin-bottom: 0;
+}
+
+
+/*Colors*/
+.bg-e3 {
+  background-color: #e3f2fd;
+}

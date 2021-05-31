@@ -1,0 +1,10 @@
+Goal: Simple Opinions
+
+Objectives:
+like/dislike            ✓
+want/don't want         ✓
+I heard its good/bad    ✓
+It seems to be good/bad ✓
+can/can't               ✓
+It sounds good/bad      ✓
+looks good/bad          ✓

@@ -1,0 +1,19 @@
+header
+  nav.navbar.navbar-expand-md.navbar-dark.bg-primary
+    .container-fluid.px-5
+      //- Add if statement for applying px-5 (true of >mobile size)
+      a.navbar-brand(href='/') Jappamate
+      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarCollapse' aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarCollapse.collapse.navbar-collapse
+        ul.navbar-nav.me-auto.mb-2.mb-md-0
+        ul.nav.navbar-nav.navbar-right
+          li.nav-item
+            a.nav-link(href='/mastery/dashboard') #[b DASHBOARD]
+          li.nav-item
+            a.nav-link(href='/mastery/articles') #[b ARTICLES]
+          li.nav-item
+            a.nav-link(href='/mastery/account'): i.fa.fa-user
+          li.nav-item
+            a.nav-link(href="/auth/logout"): i.fa.fa-sign-out
+  .mb-3

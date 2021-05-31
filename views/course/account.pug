@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    main.flex-shrink-0
+        .container
+          div.d-flex.flex-row
+            img.profile-icon(src=user.image)
+            h1.mt-5 #{src=user.firstName}'s account
+          div.px-4
+            p.lead
+            | Account

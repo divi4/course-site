@@ -1,0 +1,60 @@
+extends layout
+
+block content
+    - var n = 0;
+    main.flex-shrink-0
+        .container
+            h1.mt-5 Hi, #{user.firstName}!
+            
+            div.row.justify-content-between
+              div.col.d-flex.flex-column
+                p.lead.text-center.
+                  Overview
+                div.d-flex
+                  div.col-4b
+                    while n <= 30
+                      div.d-flex-inline
+                        button.circle.m-1 Wk#{n++}
+
+                  //- Weekly video quick view
+                  //- CORS will block accordion functionality
+                  div.weeks-vid.col-75.pad-left-07
+                    div.vid-container.d-block.p-1.my-1
+                      div#accordionButton.accordion
+                        div.accordion-item
+                          h2#headingOne.accordion-header
+                            button.accordion-button.btn.p-1(
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne"
+                              aria-expanded="true"
+                              aria-controls="collapseOne"
+                              ): i.fa.fa-caret-square-o-right(aria-hidden="true") #{title} title
+                          div#collapseOne.accordion-collapse.collapse.show(
+                            aria-labelledby="headingOne"
+                            data-bs-parent="#accordionButton"
+                          )
+                            div.accordion-body.
+                              #{description} description
+
+              //- Continue your journey column
+              div.col.d-flex.flex-column
+                p.lead.text-center.
+                  Continue your journey
+                div.d-flex.div-align
+                  div.col-4.flex-grow-1.embed-responsive
+                    iframe.embed-responsive-item.shadow-5-strong(scrolling="no" marginheight="0" marginwidth="0" width="393.38" height="221" type="text/html" src="https://www.youtube.com/embed/GEhEUy85PsY?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com")
+                  div.col-4
+                    p.pad-3.text-left.
+                      How to speak Japanese #{title}
+                    p.text-left.
+                      Time: 4.56mins #{time}
+                p.
+                  Description
+                  #{description}
+                  atsroientas
+                  sratoiasnetoiesrtn
+                  asrtoiensr oeisrn t
+                   sarteio ent oasrien  sraio nesr asrtoiensr as sroatien srtoien
+                button.btn.btn-primary.rounded.mx-4.mt-4(type="button") Continue watching
+                

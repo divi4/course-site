@@ -6,9 +6,6 @@ Make wireframe
 Sketch out the course pages
 
 
-
-Clean up schemas and controllers
-
 Hook up wk buttons to corresponding videos, show/hide videos on click
     - Do with css for now, although could dynamically generate on request will      reload page, so only do that if we convert the site to react
 Build data structure that contains:
@@ -33,3 +30,4 @@ Style dotted lines between the wk buttons
 
 *******Finished**********
 Set up mongodb + gcp
+Clean up schemas and controllers

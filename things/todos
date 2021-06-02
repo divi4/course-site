@@ -2,12 +2,13 @@ Figure out what pages need for the 'sales' side of the site
 Learn React
 Make wireframe
 
-
 Sketch out the course pages
 
+
+Create a object {wk1{vid1: {title: tonato, description: aotsn, link: raston...}}}
+Use a for loop to create the video containers, adding data-week attribute to indicate the week it belongs to
 Hook up wk buttons to corresponding videos, show/hide videos on click
     - Do with css for now, although could dynamically generate on request will      reload page, so only do that if we convert the site to react
-
 
 
 Build data structure that contains:

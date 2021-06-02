@@ -6,8 +6,5 @@ const multer = require("multer")
 const upload = multer({dest: "public/uploads/images"})
 
 router.get('/', ensureAuth, accountController.getAccount)
-router.post("/upload", upload.single('photo'), accountController.createPost)
-router.put("/updateLike", accountController.updateLike)
-router.delete("/deletePost", accountController.deletePost)
 
 module.exports = router

@@ -104,3 +104,21 @@ const ImgSchema = new mongoose.Schema({
 })
 
 module.exports = mongoose.model('imgs', ImgSchema)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+router.post("/upload", upload.single('photo'), accountController.createPost)
+router.put("/updateLike", accountController.updateLike)
+router.delete("/deletePost", accountController.deletePost)

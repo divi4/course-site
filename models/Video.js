@@ -9,12 +9,16 @@ const VideoSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  thumbnail: {
+    type: String,
+    required: true
+  },
   link: {
     type: String,
     required: true
   },
-  length: {
-    type: String.
+  duration: {
+    type: String,
     required: true
   }
 })

@@ -5,9 +5,11 @@ Make wireframe
 
 Sketch out the course pages
 
-
 Hook up wk buttons to corresponding videos, show/hide videos on click
     - Do with css for now, although could dynamically generate on request will      reload page, so only do that if we convert the site to react
+
+
+
 Build data structure that contains:
 - video link
 - video title
@@ -26,6 +28,14 @@ Reduce base font size
 Style lines between the wk button pressed and its videos
 Style dotted lines between the wk buttons
 
+
+Use the youtube data api for providing info to create the docs in db
+Use the server-side youtube api client library
+
+
+Going live:
+Restrict API key
+https://cloud.google.com/docs/authentication/api-keys?visit_id=637582030491456012-3599600765&rd=1
 
 
 *******Finished**********

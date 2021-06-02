@@ -6,7 +6,7 @@ Make wireframe
 Sketch out the course pages
 
 
-Set up mongodb + gcp
+
 Clean up schemas and controllers
 
 Hook up wk buttons to corresponding videos, show/hide videos on click
@@ -25,5 +25,11 @@ Add checkpoints
 Add logic to show only some wks at a time
 Dynamically generate passed modules
 
+Reduce base font size
 Style lines between the wk button pressed and its videos
 Style dotted lines between the wk buttons
+
+
+
+*******Finished**********
+Set up mongodb + gcp

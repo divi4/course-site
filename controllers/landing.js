@@ -1,5 +1,3 @@
-// Where Crud goes
-
 module.exports = {
     getLanding: (req,res)=>{
         res.render('funnel/landing.pug')

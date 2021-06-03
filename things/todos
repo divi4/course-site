@@ -33,6 +33,8 @@ Style dotted lines between the wk buttons
 Use the youtube data api for providing info to create the docs in db
 Use the server-side youtube api client library
 
+Fix the while loop incrementor displaying
+
 
 Going live:
 Restrict API key

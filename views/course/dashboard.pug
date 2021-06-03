@@ -10,41 +10,42 @@ block content
               div.col.d-flex.flex-column
                 p.lead.text-center.
                   Overview
-                div.d-flex
-                  div.col-4b
+                div.d-flex.flex-row.col-4b
+                  div.col-btn
                     while n <= 4
                       div.d-flex-inline
                         button.circle.m-1 Wk#{n++}
 
                   //- Weekly video quick view
                   //- CORS will block accordion functionality
-
-                  div.weeks-vid.col-75.pad-left-07
-                    div.vid-container.d-block.p-1.my-1
-                      div#accordionButton.accordion
-                      - let x = 0
-                      while x <= 3
-                        each val in dict[x]
-                          div.accordion-item
-                            - let heading = `heading${x}`
-                            - let collapsex = `collapse${x}`
-                            h2(id=heading class="accordion-header")
-                              button.accordion-button.btn.p-1(
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target=`#${collapsex}`
-                                aria-expanded="true"
-                                aria-controls=collapsex
-                                ): i.fa.fa-caret-square-o-right(aria-hidden="true") #{val.title}
-                            div(
-                              id=collapsex 
-                              class=x == 0 ? "accordion-collapse collapse show" : "accordion-collapse collapse"
-                              aria-labelledby= heading
-                              data-bs-parent="#accordionButton" )
-                              div.accordion-body.
-                                #{val.description}
-                                #{x++}
-                              //- Need the above incrementor to end while loop
+                  div.all-weeks.flex-column
+                    each wk in ["0", "1",  "2", "3"]
+                      div.weeks-vid.col-4b.pad-left-07(data-wk=wk)
+                        div.vid-container.d-block.p-1.my-1
+                          div#accordionButton.accordion
+                          - let x = 0
+                          while x <= 3
+                            each val in dict[wk]
+                              div.accordion-item
+                                - let heading = `heading${x}`
+                                - let collapsex = `collapse${x}`
+                                h2(id=heading class="accordion-header")
+                                  button.accordion-button.btn.p-1(
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target=`#${collapsex}`
+                                    aria-expanded="true"
+                                    aria-controls=collapsex
+                                    ): i.fa.fa-caret-square-o-right(aria-hidden="true") #{val.title}
+                                div(
+                                  id=collapsex 
+                                  class=x == 0 ? "accordion-collapse collapse show" : "accordion-collapse collapse"
+                                  aria-labelledby= heading
+                                  data-bs-parent="#accordionButton" )
+                                  div.accordion-body.
+                                    #{val.description}
+                                    #{x++}
+                                  //- Need the above incrementor to end while loop
 
               //- Continue your journey column
               div.col.d-flex.flex-column

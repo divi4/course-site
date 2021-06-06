@@ -14,13 +14,13 @@ block content
                   div.col-btn
                     while n <= 4
                       div.d-flex-inline
-                        button.circle.m-1 Wk#{n++}
+                        button.wkBtns.circle.m-1(value=`${n-1}` data-toggle="collapse") Wk#{n++}
 
                   //- Weekly video quick view
                   //- CORS will block accordion functionality
                   div.all-weeks.flex-column
                     each wk in ["0", "1",  "2", "3"]
-                      div.weeks-vid.col-4b.pad-left-07(data-wk=wk)
+                      div(class=wk == 2 ? "weeks-vid col-4b pad-left-07 collapse show" : "weeks-vid col-4b pad-left-07 collapse" data-wk=wk)
                         div.vid-container.d-block.p-1.my-1
                           div#accordionButton.accordion
                           - let x = 0

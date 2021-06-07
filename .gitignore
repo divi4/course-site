@@ -8,6 +8,10 @@ lib-cov
 *.gz
 *.swp
 
+JapaneseCourse
+jap-hierarchy.png
+things
+
 pids
 logs
 results

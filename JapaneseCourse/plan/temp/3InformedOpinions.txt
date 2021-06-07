@@ -1,7 +1,0 @@
-Goal: To be able to express an opinion and justify it with some reasoning
-
-Objectives:
-I heard      ✓
-It seems     ✓
-Conjunctions ✓
-Comparisions ✓

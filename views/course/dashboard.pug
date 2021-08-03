@@ -15,12 +15,17 @@ block content
                     while n <= 4
                       div.d-flex-inline
                         button.wkBtns.circle.m-1(value=`${n-1}` data-toggle="collapse") Wk#{n++}
+                        //- To connect the buttons to the week vids we use a dictionary that js will look up when given the buttons class attribute.
+                        //- The dictionary will then return the related week to js
+                        //- How we do this will depend on how we look up a dictionary - how we can put the given attribute into a suitable format
 
                   //- Weekly video quick view
                   //- CORS will block accordion functionality
                   div.all-weeks.flex-column
                     each wk in ["0", "1",  "2", "3"]
+                      //- Currently showing vids from week 2
                       div(class=wk == 2 ? "weeks-vid col-4b pad-left-07 collapse show" : "weeks-vid col-4b pad-left-07 collapse" data-wk=wk)
+                        p Week #{wk}
                         div.vid-container.d-block.p-1.my-1
                           div#accordionButton.accordion
                           - let x = 0
@@ -62,5 +67,6 @@ block content
                       Time: #{shrt.duration}s
                 p.
                   #{shrt.description}
-                button.btn.btn-primary.rounded.mx-4.mt-4(type="button") Continue watching
-                
+                //- Link continue watching button to the dynamicallly generated page
+                button.btn.btn-primary.rounded.mx-4.mt-4(type="button") 
+                  a.link-light.text-decoration-none(href="/mastery/account") Continue watching

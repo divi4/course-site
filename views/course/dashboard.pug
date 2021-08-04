@@ -14,7 +14,8 @@ block content
                   div.col-btn
                     while n <= 4
                       div.d-flex-inline
-                        button.wkBtns.circle.m-1(value=`${n-1}` data-toggle="collapse") Wk#{n++}
+                        button.wkBtns.circle.m-1(value=`${n-1}`) Wk#{n++} 
+                        //- data-toggle="collapse"
                         //- To connect the buttons to the week vids we use a dictionary that js will look up when given the buttons class attribute.
                         //- The dictionary will then return the related week to js
                         //- How we do this will depend on how we look up a dictionary - how we can put the given attribute into a suitable format
